@@ -56,7 +56,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:gravity="right"
                 android:src="@drawable/russia2" />
 
 
@@ -71,7 +70,6 @@
                 android:id="@+id/scoreA"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
                 android:fontFamily="@font/highschool"
                 android:gravity="center"
@@ -117,7 +115,7 @@
                 android:layout_weight="2"
                 android:fontFamily="@font/highschool"
                 android:gravity="center_horizontal"
-                android:text="Penalties"
+                android:text="@string/penalties"
                 android:textSize="30sp" />
 
             <TextView
@@ -145,6 +143,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="addGoalTeamA"
                 android:text="@string/goal" />
 
             <Button
@@ -153,6 +152,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="addGoalTeamB"
                 android:text="@string/goal" />
 
 
@@ -169,6 +169,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="addFoulTeamA"
                 android:text="@string/penalty" />
 
             <Button
@@ -177,6 +178,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="addFoulTeamB"
                 android:text="@string/penalty" />
 
 
@@ -191,6 +193,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:onClick="resetScore"
         android:text="@string/reset" />
 
 
